@@ -6,10 +6,10 @@ EXE := $(BIN_DIR)/slothmq
 SRC := $(wildcard $(SRC_DIR)/*.c)
 OBJ := $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
-CPPFLAGS := -Iinclude -MMD -MP
-CFLAGS   := -Wall
-LDFLAGS  := -Llib
-LDLIBS   := -lm
+#CPPFLAGS := -Iinclude -MMD -MP
+CFLAGS   := -Wall -ggdb -pedantic
+LDFLAGS  := 
+LDLIBS   := 
 
 .PHONY: all clean
 
